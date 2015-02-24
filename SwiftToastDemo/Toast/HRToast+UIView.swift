@@ -187,7 +187,7 @@ extension UIView {
         var existingActivityView = objc_getAssociatedObject(self, &HRToastActivityView) as UIView?
         if existingActivityView == nil { return }
         UIView.animateWithDuration(HRToastFadeDuration,
-            delay: 0.0,
+            delay: 1.0,
             options: UIViewAnimationOptions.CurveEaseOut,
             animations: {
                 existingActivityView!.alpha = 0.0
